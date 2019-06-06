@@ -26,14 +26,14 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
           ]}
-          bodyAttributes={{ class: 'has-navbar-fixed-top' }}
+          bodyAttributes={{}} //class: 'has-navbar-fixed-top' }}
         >
           <html lang="en" />
         </Helmet>
 
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <div className="site-content">{children}</div>
-        <Footer />
+        {/* <Footer /> */}
       </>
     )}
   />
