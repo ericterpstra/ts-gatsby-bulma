@@ -4,7 +4,7 @@ import InterestForm from './InterestForm'
 export default class Hero extends PureComponent {
   render() {
     return (
-      <section className="hero-home hero is-fullheight is-primary is-bold">
+      <section className="hero-home hero hero-frenchcuff is-fullheight is-bold">
         <div className="hero-body">
           <div className="container">
             <div className="columns">

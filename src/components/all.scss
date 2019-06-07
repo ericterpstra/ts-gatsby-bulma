@@ -11,14 +11,38 @@
   .site-content {
     flex: 1;
   }
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
 }
 
 .hero-home {
   .container {
     padding: 4rem 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0.5rem;
     box-shadow: 3px 4px 5px 1px #333;
+  }
+}
+
+$backgrounds: (
+  speedlimit10: '../images/backgrounds/10speedlimit.jpg',
+  gavel: '../images/backgrounds/gavel.jpg',
+  jaguar: '../images/backgrounds/jaguar.jpg',
+  lawpage: '../images/backgrounds/lawpage.jpg',
+  frenchcuff: '../images/backgrounds/frenchcuff.jpg',
+  justice: '../images/backgrounds/justice.jpg',
+  legalbooks: '../images/backgrounds/legalbooks.jpg',
+  policelights: '../images/backgrounds/policelights.jpg',
+  signature: '../images/backgrounds/signature.jpg',
+  speedingcars: '../images/backgrounds/speedingcars.jpg',
+  taillights: '../images/backgrounds/taillights.jpg',
+  tunnel: '../images/backgrounds/tunnel.jpg',
+);
+
+@each $key, $image in $backgrounds {
+  .hero-#{$key} {
+    @extend .hero;
+    background-image: url('#{$image}');
+    background-size: cover;
   }
 }
 

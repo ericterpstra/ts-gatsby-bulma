@@ -9,16 +9,19 @@ const Header = ({ siteTitle }) => (
   >
     <div className="container">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item ">
+        <Link to="/" className="navbar-item is-size-2 has-text-weight-bold	">
           {siteTitle}
         </Link>
       </div>
 
       <div id="navbar-menu" className="navbar-menu is-static">
         <div className="navbar-end">
-          <Link to="/page-2" className="navbar-item is-secondary">
-            Page 2
-          </Link>
+          <a
+            href="tel:1-555-555-5555"
+            className="navbar-item is-secondary is-size-5"
+          >
+            (555) 555-5555
+          </a>
         </div>
       </div>
     </div>

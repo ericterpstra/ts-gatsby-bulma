@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'IOWA Ticket Help',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -14,6 +14,15 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Raleway\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
       },
     },
     'gatsby-plugin-sass',
