@@ -21,6 +21,21 @@
     border-radius: 0.5rem;
     box-shadow: 3px 4px 5px 1px #333;
   }
+
+  .control {
+    margin-bottom: 1.67rem;
+  }
+}
+
+.hero-content {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero-list {
+  li {
+    font-size: 1.2rem;
+  }
 }
 
 $backgrounds: (
@@ -50,6 +65,14 @@ $backgrounds: (
   padding: 0 3vw;
 }
 
+.hero-right-column-title {
+  background-color: beige;
+  border-radius: 2rem;
+  margin: 0 5vw;
+}
+
 .interest-form-wrapper {
-  padding: 3vh 6vw;
+  padding: 2vh 0vw 3vh;
+  max-width: 26rem;
+  margin: 0 auto;
 }
